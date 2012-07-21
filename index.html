@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Creating a Custom jQuery Plugin</title>
+    <link type="text/css" rel="stylesheet" href="jquery.accordion.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.accordion.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('dl#my-accordion').accordion({open:true});
+        $('dl#my-accordion2').accordion({open:true});
+    });
+    </script>
+    <style type="text/css">
+	p {
+		width: 500px;
+	}
+	</style>
+</head>
+
+<body>
+
+    <dl class="accordion" id="my-accordion">
+        <dt>Section 1</dt>
+        <dd>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.</dd>
+        <dt>Section 2</dt>
+        <dd>Vestibulum a velit eu ante scelerisque vulputate.</dd>
+        <dt>Section 3</dt>
+        <dd>Nam mi. Proin viverra leo ut odio. Curabitur malesuada.</dd>
+        <dt>Section 4</dt>
+        <dd>Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.</dd>
+    </dl>
+	
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta aliquam elit vitae posuere.</p>
+	
+    <dl class="accordion" id="my-accordion2">
+        <dt>Section 1</dt>
+        <dd>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.</dd>
+        <dt>Section 2</dt>
+        <dd>Vestibulum a velit eu ante scelerisque vulputate.</dd>
+    </dl>
+
+</body>
+</html>
